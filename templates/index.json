@@ -9,40 +9,15 @@
  */
 {
   "sections": {
-    "hero_TLHY4X": {
+    "hero_WXwjHh": {
       "type": "hero",
-      "blocks": {
-        "collection_46JJmN": {
-          "type": "collection",
-          "settings": {
-            "collection": "denim",
-            "image_bg": "shopify://shop_images/hero-denim.png",
-            "image_hover": "shopify://shop_images/hero-denim-hover.png"
-          }
-        },
-        "collection_3cXQhh": {
-          "type": "collection",
-          "settings": {
-            "collection": "beach",
-            "image_bg": "shopify://shop_images/hero-beach.png",
-            "image_hover": "shopify://shop_images/hero-beach-hover.png"
-          }
-        },
-        "collection_4DwFgG": {
-          "type": "collection",
-          "settings": {
-            "collection": "back-to-work",
-            "image_bg": "shopify://shop_images/hero-work.png",
-            "image_hover": "shopify://shop_images/hero-work-hover.png"
-          }
-        }
-      },
-      "block_order": [
-        "collection_46JJmN",
-        "collection_3cXQhh",
-        "collection_4DwFgG"
-      ],
       "settings": {}
+    },
+    "weekly_picks_w94KeP": {
+      "type": "weekly-picks",
+      "settings": {
+        "collection": "weekly-picks"
+      }
     },
     "image_banner": {
       "type": "image-banner",
@@ -257,7 +232,8 @@
     }
   },
   "order": [
-    "hero_TLHY4X",
+    "hero_WXwjHh",
+    "weekly_picks_w94KeP",
     "image_banner",
     "rich_text",
     "featured_collection",
