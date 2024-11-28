@@ -11,59 +11,43 @@
   "sections": {
     "hero_WXwjHh": {
       "type": "hero",
+      "blocks": {
+        "collection_NQA6kE": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_bg": "shopify://shop_images/hero-beach.png",
+            "image_hover": "shopify://shop_images/hero-beach-hover.png"
+          }
+        },
+        "collection_G8FcDC": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_bg": "shopify://shop_images/hero-denim.png",
+            "image_hover": "shopify://shop_images/hero-denim-hover.png"
+          }
+        },
+        "collection_RyzkfL": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_bg": "shopify://shop_images/hero-work.png",
+            "image_hover": "shopify://shop_images/hero-work-hover_eb16b714-2e2e-4a85-96ed-30fae0fa1f07.png"
+          }
+        }
+      },
+      "block_order": [
+        "collection_NQA6kE",
+        "collection_G8FcDC",
+        "collection_RyzkfL"
+      ],
       "settings": {}
     },
     "weekly_picks_w94KeP": {
       "type": "weekly-picks",
       "settings": {
         "collection": "weekly-picks"
-      }
-    },
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
       }
     },
     "rich_text": {
@@ -124,63 +108,10 @@
         "padding_bottom": 36
       }
     },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
-        "column1": {
+        "column_MCe4pW": {
           "type": "column",
           "settings": {
             "title": "Column",
@@ -209,7 +140,7 @@
         }
       },
       "block_order": [
-        "column1",
+        "column_MCe4pW",
         "column2",
         "column3"
       ],
@@ -234,11 +165,8 @@
   "order": [
     "hero_WXwjHh",
     "weekly_picks_w94KeP",
-    "image_banner",
     "rich_text",
     "featured_collection",
-    "collage",
-    "video",
     "multicolumn"
   ]
 }
