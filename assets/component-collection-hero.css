@@ -1,3 +1,21 @@
+.collection-hero {
+  margin: 2rem;
+  position: relative; /* Ensure the pseudo-element is positioned relative to this */
+  z-index: 1; /* Define stacking context explicitly */
+}
+
+.collection-hero:before {
+  content: "";
+  position: absolute;
+  background-color: #e8effa;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  top: 60px;
+  z-index: -1; /* Place behind the parent */
+}
+
+
 .collection-hero__inner {
   display: flex;
   flex-direction: column;
@@ -21,6 +39,8 @@
 
 .collection-hero__text-wrapper {
   flex-basis: 100%;
+  margin: 2rem;
+  position: relative;
 }
 
 @media screen and (min-width: 750px) {
@@ -36,7 +56,8 @@
 }
 
 .collection-hero__title {
-  margin: 2.5rem 0;
+  margin: 2.5rem 0; 
+  text-align: center;
 }
 
 .collection-hero__title + .collection-hero__description {
