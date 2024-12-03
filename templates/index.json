@@ -15,7 +15,7 @@
         "collection_NQA6kE": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "beach",
             "image_bg": "shopify://shop_images/hero-beach.png",
             "image_hover": "shopify://shop_images/hero-beach-hover.png"
           }
@@ -23,7 +23,7 @@
         "collection_G8FcDC": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "denim-1",
             "image_bg": "shopify://shop_images/hero-denim.png",
             "image_hover": "shopify://shop_images/hero-denim-hover.png"
           }
@@ -31,7 +31,7 @@
         "collection_RyzkfL": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "back-to-work",
             "image_bg": "shopify://shop_images/hero-work.png",
             "image_hover": "shopify://shop_images/hero-work-hover_eb16b714-2e2e-4a85-96ed-30fae0fa1f07.png"
           }

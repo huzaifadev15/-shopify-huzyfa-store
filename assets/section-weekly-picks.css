@@ -1,68 +1,127 @@
+/* Import a modern Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
 .weekly-picks {
-    margin: 50px 0 120px;
+    margin: 60px 0 120px;
+    padding: 0 20px;
 }
 
 .weekly-picks__header {
     text-align: center;
-    font-size: 34px; /* Removed the extra space */
+    font-size: 36px;
+    font-weight: 600;
     position: relative;
-    color: black;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.weekly-picks__header:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #ff6f61;
+    margin: 10px auto 0;
 }
 
 .weekly-picks__product-ctn {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (min-width: 768px) { /* Fixed syntax issue (space after `and`) */
+@media screen and (min-width: 768px) {
     .weekly-picks__product-ctn {
         flex-direction: row;
+        flex-wrap: wrap;
         width: 768px;
         margin: 0 auto;
+        gap: 30px;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .weekly-picks__product-ctn {
-        width: 800px;
+        width: 960px;
     }
 }
 
 .weekly-picks-items {
-    width: 300px;
-    height: 400px;
-    margin: 10px auto;
+    width: 320px;
+    height: 420px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.weekly-picks__product-title {
-    text-align: center;
-    color: black;
-    font-size: 16px;
-}
-
-.weekly-picks__item-link {
-    text-decoration: none;
-    position: relative;
-}
-
-.weekly-picks__price {
-    font-size: 19px;
-    text-align: center;
-    color: black;
+.weekly-picks-items:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .weekly-picks__img-wrapper {
     display: grid;
     place-items: center;
     height: 300px;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.weekly-picks__img-wrapper img {
+    width: 70%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.weekly-picks-items:hover .weekly-picks__img-wrapper img {
+    transform: scale(1.1);
+}
+
+.weekly-picks__product-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #4a4a4a;
+    margin: 15px 0;
+    text-transform: capitalize;
+}
+
+.weekly-picks__item-link {
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+}
+
+.weekly-picks__price {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #ff6f61;
+    margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
     .weekly-picks__img-wrapper > img {
         width: 80%;
     }
-}
-
-.weekly-picks__img-wrapper img {
-    width: 75%;
 }
