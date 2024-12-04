@@ -1,25 +1,47 @@
+/* Importing modern Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
 .rich-text {
   z-index: 1;
+  padding: 2rem;
 }
 
 .rich-text__wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: calc(100% - 4rem / var(--font-body-scale));
+  margin: 0 auto;
 }
 
 .rich-text:not(.rich-text--full-width) .rich-text__wrapper {
   margin: auto;
-  width: calc(100% - 8rem / var(--font-body-scale));
+  width: calc(100% - 6rem / var(--font-body-scale));
+  padding: 1rem;
 }
 
 .rich-text__blocks {
   width: 100%;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+.rich-text__blocks p {
+  font-size: 1rem;
+  margin: 1rem 0;
 }
 
 @media screen and (min-width: 750px) {
   .rich-text__wrapper {
-    width: 100%;
+    width: 90%;
   }
 
   .rich-text__wrapper--left {
@@ -32,6 +54,7 @@
 
   .rich-text__blocks {
     max-width: 50rem;
+    padding: 2rem;
   }
 }
 
@@ -43,6 +66,7 @@
 
 .rich-text__blocks * {
   overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .rich-text__blocks > * {
@@ -51,18 +75,18 @@
 }
 
 .rich-text__blocks > * + * {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .rich-text__blocks > * + a {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 .rich-text__buttons {
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
   width: 100%;
   max-width: 45rem;
   word-break: break-word;
@@ -70,7 +94,22 @@
 
 .rich-text__buttons--multiple > * {
   flex-grow: 1;
-  min-width: 22rem;
+  min-width: 20rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid #4a4a4a;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #4a4a4a;
+  transition: all 0.3s ease;
+}
+
+.rich-text__buttons--multiple > *:hover {
+  background-color: #4a4a4a;
+  color: #fff;
 }
 
 .rich-text__buttons + .rich-text__buttons {
@@ -83,4 +122,37 @@
 
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
+}
+
+/* Typography Enhancements */
+.rich-text__blocks h1, 
+.rich-text__blocks h2, 
+.rich-text__blocks h3 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #222;
+}
+
+.rich-text__blocks h1 {
+  font-size: 2rem;
+}
+
+.rich-text__blocks h2 {
+  font-size: 1.75rem;
+}
+
+.rich-text__blocks h3 {
+  font-size: 1.5rem;
+}
+
+/* Links */
+.rich-text__blocks a {
+  color: #ff6f61;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.rich-text__blocks a:hover {
+  text-decoration: underline;
 }

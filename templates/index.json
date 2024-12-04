@@ -94,14 +94,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "At MOO, we create timeless, sustainable clothing that blends quality craftsmanship with modern design.",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "<p>Welcome to MOO, where style meets sustainability! We take pride in offering high-quality, eco-conscious clothing designed to keep you comfortable and confident. Whether you're looking for everyday essentials or standout pieces, our collection has something for everyone.</p><p>Check out our latest arrivals, crafted with care and made to last. Don’t forget to subscribe to our newsletter for exclusive updates, special offers, and the latest trends.</p><p>Thank you for supporting a brand that believes in fashion with a purpose! 💚</p>"
           }
         }
       },
@@ -118,42 +118,15 @@
         "padding_bottom": 0
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
         "column_MCe4pW": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/cardigan-striped.jpg",
+            "title": "",
+            "text": "<p><strong>Discover Our Latest Product – The Eco-Friendly Water Bottle</strong><br/>Stay hydrated and stylish with our new eco-friendly water bottle! Made from sustainable materials, it’s perfect for those on the go.<br/><strong>Availability</strong>: In Stock<br/><strong>Review</strong>: \"I love this bottle! It keeps my drinks cold for hours and looks great!\" – Sarah T.</p>",
             "link_label": "",
             "link": ""
           }
@@ -161,8 +134,9 @@
         "column2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/scarf.jpg",
+            "title": "",
+            "text": "<p><strong>Explore Our Winter Collection</strong><br/>Get ready for the colder months with our cozy and stylish winter collection. From warm knit sweaters to waterproof jackets, we’ve got you covered.<br/><strong>Availability</strong>: Limited Stock<br/><strong>Review</strong>: \"The quality is unmatched, and I feel so warm in these pieces. Highly recommend!\" – James R.</p>",
             "link_label": "",
             "link": ""
           }
@@ -170,8 +144,9 @@
         "column3": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/top-black-transparent.jpg",
+            "title": "",
+            "text": "<p><strong>How to Build a Sustainable Wardrobe</strong><br/>Looking for tips on building a wardrobe that’s both stylish and eco-friendly? Check out our latest blog post for sustainable fashion advice and how to curate your closet with long-lasting, versatile pieces.<br/><strong>Availability</strong>: Read Now<br/><strong>Review</strong>: \"This post really opened my eyes to how easy it can be to shop sustainably. A must-read!\" – Emily K.</p>",
             "link_label": "",
             "link": ""
           }
@@ -205,7 +180,6 @@
     "weekly_picks_w94KeP",
     "section_grid_3dxAQV",
     "rich_text",
-    "featured_collection",
     "multicolumn"
   ]
 }
